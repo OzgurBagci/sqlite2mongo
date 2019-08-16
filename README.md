@@ -4,8 +4,11 @@ Not much testing is done at the moment. It is a simple tool that gets the job do
 # Usage
 Create 'DBTransferer' object with parameters: 
   mongoConf -> mongoUser(optional), mongoPass(optional), mongoPort(optional), mongoDB(mandatory), mongoURL(mandatory)
+  
   example:
-    { 'mongoUser': 'johndoe', 'password': 'verysecret', 'mongoPort': '1111', 'mongoDB': 'testing', 'mongoURL': 'localhost' }
+  
+  `{ 'mongoUser': 'johndoe', 'password': 'verysecret', 'mongoPort': '1111', 'mongoDB': 'testing', 'mongoURL': 'localhost' }`
+  
   sqliteDB -> The path to sqlite database file
   
 After creating the object, call 'sqlite2mongo' member function on it with no parameters.
