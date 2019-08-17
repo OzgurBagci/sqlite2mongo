@@ -1,3 +1,7 @@
+# WRITTEN BY OZGUR BAGCI <bagciozgur@yahoo.com>
+
+# GNU GPLv3 LICENSE
+
 # sqlite2mongo
 Not much testing is done at the moment. It is a simple tool that gets the job done for our use case.
 
@@ -15,6 +19,6 @@ After creating the object, call 'sqlite2mongo' member function on it with no par
 # Notes
 - It will create all the collections with the same name as the tables in SQLite DB.
 - It will keep to connection open until the object is destroyed for efficiency.
-- For now, it will create another unique ID in MongoDB Collection and uniquiness, primary key status etc. not checked. (Working on them.)
-- For now, do not trust this library. Use it at your own risk.
-- Any contrubitions welcome.
+- It works with this keywords on SQLite as types: PRIMARY_KEY, NOT NULL, INT, VARCHAR(*), BOOLEAN.
+- Use at your own risk.
+- It checks data types before pushing it into MongoDB and create unique indices for PRIMARY_KEYs.
