@@ -100,10 +100,3 @@ DBTransferer.prototype.mongoInserter = function (tableName, row) {
 
 module.exports = { DBTransferer, };
 
-
-// FOR TESTING
-
-const db = new DBTransferer({ 'mongoURL': 'localhost', 'mongoDB': 'test' },
-    '/usr/local/zulutek/doraapi/test.db');
-
-db.sqlite2mongo();
