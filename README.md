@@ -1,9 +1,9 @@
-# WRITTEN BY OZGUR BAGCI <bagciozgur@yahoo.com>
-
-# GNU GPLv3 LICENSE
-
 # sqlite2mongo
 Not much testing is done at the moment. It is a simple tool that gets the job done for our use case.
+
+WRITTEN BY OZGUR BAGCI <bagciozgur@yahoo.com>
+
+GNU GPLv3 LICENSE
 
 # Usage
 Create 'DBTransferer' object with parameters: 
